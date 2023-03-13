@@ -1,0 +1,13 @@
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contact__1 {
+    display: flex;
+}
+.contact__1--item {
+    display: flex;
+    padding: 0 1em 0 1em;
+    
+}
