@@ -1,13 +1,56 @@
+.contact__1--item > p {
+    font-size: small;
+    font-weight: bold;
+    color: black;
+}
+.contact__1--item {
+    text-decoration: none;
+}
 .contact {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: nowrap;
 }
 .contact__1 {
     display: flex;
 }
 .contact__1--item {
     display: flex;
-    padding: 0 1em 0 1em;
+    padding: 0 0.25em 0 .25em;    
+}
+
+/*burger menu*/
+.menu--top {
+    display: flex;
+    justify-content: space-between;
+}
+.menu__burger > div {
+    width: 44px;
+    height: 8px;
+    background-color: black;
+    margin: 4px;
+    border: hidden 1px;
+    border-radius: 8px;
+}
+.menu__seznam {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    transform: scaleY(30);
+}
+.menu__seznam > a {
     
+}
+.menu__burger > div:hover .menu__seznam > a {
+    transform: scaleY(0);
+
+}
+
+
+
+
+ul {
+    list-style: none;
 }
