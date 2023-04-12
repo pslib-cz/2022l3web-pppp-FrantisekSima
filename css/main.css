@@ -17,7 +17,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: var(--orange-color);
-    max-width: 200px;
+    max-width: fit-content;
     height: 50px;
     vertical-align: middle;
     border: hidden;
@@ -28,6 +28,7 @@ body {
     text-decoration: none;
     color: var(--lightblue-color);
     font-weight: 600;
+    padding: 0 1em 0 1em;
 }
 /* úvod */
 .uvod__bot {
@@ -36,15 +37,14 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-h1 > em {
-    color: var(--orange);
+em {
+    color: var(--orange-color);
     text-decoration: none;
 }
 .uvod {
     margin: 1em;
 }
 .uvod__fajfky {
-    margin-left: 1em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
@@ -54,4 +54,123 @@ h1 > em {
     object-fit: cover;
     border: hidden;
     border-radius: 10px;
+    margin-bottom: 2em;
+}
+.uvod__button {
+    margin-bottom: 2em;
+}
+
+/* výhody------------------------------------------------------------------------- */
+
+.výhody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    background-color: var(--lightgray-color);
+    padding-top: 1em;
+    padding-bottom: 3em;
+}
+header > h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.vyhody__ikony div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.vyhody__ikony div > img {
+    background-color: var(--darkblue-color);
+    padding: 3em;
+    border: hidden;
+    border-radius: 100em;
+    width: 45px;
+    height: 45px;
+}
+.vyhody__ikony div > p {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    width: 80%;
+    font-weight: 800;
+}
+.výhody__linka {
+    width: 80%;
+    border: dashed var(--skyblue-color);
+    margin: 3em;
+}
+.vyhody__popisy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+.vyhody__popisy div {
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    background-color: white;
+    width: 75%;
+    padding: 1.5em;
+    border: hidden;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px var(--blue-color);
+}
+.vyhody__popisy div > h4 {
+    margin: 1em;
+    margin-left: 0;
+}
+.vyhody__popisy div > p {
+    margin: 1em;
+    margin-left: 0;
+    height: 5em;
+    overflow: hidden;
+}
+.vyhody_button {
+    margin-top: 2em;
+}
+
+/* příběh---------------------------------------------------------------------- */
+
+.pribeh {
+    padding-top: 3em;
+    width: 90%;
+    margin: auto;
+}
+.pribeh h3 {
+    font-size: x-large;
+}
+.pribeh p {
+    margin-bottom: 1em;   
+}
+.pribeh__img > img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border: hidden;
+    border-radius: 10px;
+}
+.pribeh__button {
+    margin-bottom: 1em; 
+}
+
+/* Napsali o nás------------------------------------------------------------- */
+
+.psani {
+    padding-top: 2em;
+}
+.psani__section {
+    display: flex;
+    flex-direction: row;
+}
+.psani__section img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border: hidden;
+    border-radius: 10em;
 }

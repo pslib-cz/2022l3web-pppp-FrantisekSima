@@ -30,6 +30,7 @@ header {
     display: flex;
     align-items: center;
     font-size: 10px;
+    font-weight: 700;
 }
 .contact__1--item > img {
     height: 2em;
@@ -67,7 +68,7 @@ header {
 .navbar__menu {
     position: absolute;
     width: 100vw;
-    top: -8px;
+    top: -16px;
     left: -16px;
     text-align: center;
     background-color: var(--lightgray-color);
