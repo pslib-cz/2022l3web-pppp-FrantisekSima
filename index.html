@@ -34,53 +34,73 @@
                 </a>
             </div>
         </section>
-        <section class="menu">
-            <section class="menu--top">
-                <div class="menu__logo">
-                    <a href="mainpage">
-                        <img src="./icons/Logo5.svg" alt="logo společnosti">
-                    </a>
-                </div>
-                <div class="menu__burger">
-                    <div class="burger__top"></div>
-                    <div class="burger__mid"></div>
-                    <div class="burger__bot"></div>
-                </div>
-            </section>
-            <div class="menu__seznam">
-                <a href="#"><p>Úvod</p></a>
-                <a href="#"><p>Funkce</p></a>
-                <a href="#"><p>Podpora</p></a>
-                <a href="#"><p>Ceník</p></a>
-                <a href="#"><p>Kontakt</p></a>
-            </div>
-            <div class="menu__button">
-                <a href="#"><p>Zkušební verze</p></a>
-            </div>
-        </section>
+        <nav class="navbar">
+            <a href="./index.html" class="navbar__logo"><img src=".//icons/Logo5.svg" alt="logo Ipsum" width="170" height="41"></a>
+            <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
+                <li class="nav__item">
+                    <a class="nav__link" href="index.html">Úvod</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section_2">Funkce</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section_3">Podpora</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section_4">Ceník</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section_5">Kontakt</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="btn btn-cta">Zkušební verze</a>
+                </li>
+            </menu>
+            <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)"></a></div>
+        </nav>
+        <script>
+            const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+            document.querySelector("body").onclick = (e) => {
+                const menus = document.querySelectorAll(".hamburger-menu-list");
+                for (const menu of menus) {
+                    menu.classList.add("navbar__menu--hidden");
+                }
+            }
+            for (const btn of hamburgerButtons) {
+                btn.onclick = (event) => {
+                    event.stopPropagation()
+                    const menus = document.querySelectorAll(".hamburger-menu-list");
+                    for (const menu of menus) {
+                        menu.classList.toggle("navbar__menu--hidden");
+                    }
+                }
+            }
+        </script>
     </header>
     <main>
         <section class="uvod">
-            <header>
-                <p>Řízení školy ještě nebylo jednodušší</p>
-            </header>
-            <div>
-                <p>Představujeme Software pro řízení lidských zdrojů ve škole nebylo efektivnější.</p>
+            <div class="uvod__top">
+                <header>
+                    <h1><em>Řízení školy</em> ještě nebylo jednodušší</h1>
+                </header>
+                <div>
+                    <p>Představujeme Software pro řízení lidských zdrojů ve škole nebylo efektivnější.</p>
+                </div>
+                <div>
+                    <ul>
+                        <li><img src="./icons/Vector.svg" alt="good mark"> Počítá mzdové náklady</li>
+                        <li><img src="./icons/Vector.svg" alt="good mark"> Generuje lidi</li>
+                        <li><img src="./icons/Vector.svg" alt="good mark"> Tvoří budoucnost</li>
+                    </ul>
+                </div>
+                <div class="uvod__button button">
+                    <a href="#">Vyzkoušejte demo</a>
+                </div>
+                <div>
+                    <img src="#" alt="#">
+                </div>
             </div>
-            <div>
-                <ul>
-                    <li><img src="./icons/Vector.svg" alt="good mark"> Počítá mzdové náklady</li>
-                    <li><img src="./icons/Vector.svg" alt="good mark"> Generuje lidi</li>
-                    <li><img src="./icons/Vector.svg" alt="good mark"> Tvoří budoucnost</li>
-                </ul>
-            </div>
-            <div>
-                <a href="#"><p>Vyzkoušejte demo</p></a>
-            </div>
-            <div>
-                <img src="#" alt="#">
-            </div>
-            <div>
+            <div class="uvod__bot">
                 <img src="./icons/Logo4.svg" alt="logo1">
                 <img src="./icons/Logo5.svg" alt="logo1">
                 <img src="./icons/Logo2.svg" alt="logo1">

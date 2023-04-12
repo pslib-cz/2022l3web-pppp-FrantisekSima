@@ -1,3 +1,12 @@
+:root {
+    font-family: 'Hanken Grotesk', sans-serif;
+    --orange-color: rgb(245, 132, 31);
+    --lightgray-color: rgb(245, 245, 245);
+    --lightblue-color: rgb(241, 249, 252);
+    --blue-color: rgb(45, 66, 117);
+    --darkblue-color: rgb(22, 33, 60);
+    --skyblue-color: rgb(142, 202, 230);
+}
 .contact__1--item > p {
     font-size: small;
     font-weight: bold;
@@ -5,6 +14,8 @@
 }
 .contact__1--item {
     text-decoration: none;
+    display: flex;
+    padding: 0 0.25em 0 .25em; 
 }
 .contact {
     display: flex;
@@ -15,42 +26,70 @@
 .contact__1 {
     display: flex;
 }
-.contact__1--item {
-    display: flex;
-    padding: 0 0.25em 0 .25em;    
+.contact__1--item > img {    
+    max-width: 43px;
+    max-height: 43px;
 }
 
-/*burger menu*/
-.menu--top {
+
+/*burger menu---------------------------------------------------------------*/
+.navbar {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 16px;
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: inherit;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    text-decoration: none;
+}
+
+.hamburger-menu::after {
+    content: url(../icons/Group\ 40.svg);
+    z-index: 1;
+}
+
+
+.navbar__menu {
+    position: absolute;
+    width: 100vw;
+    top: -8px;
+    left: -16px;
+    text-align: center;
+    /* background-color: var(--lightgray-color); */
+    transform-origin: top;
+    transform: scaleY(1);
+    transition: .1s;
+}
+
+*, *:visited {
+    color: var(--darkblue-color);
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.header__upper-section {
+    padding: 1rem 0;
+    margin: 0 16px 8px 16px;
     display: flex;
     justify-content: space-between;
 }
-.menu__burger > div {
-    width: 44px;
-    height: 8px;
-    background-color: black;
-    margin: 4px;
-    border: hidden 1px;
-    border-radius: 8px;
-}
-.menu__seznam {
+.header__contacts {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    overflow: hidden;
-    transform: scaleY(30);
+    gap: 1rem;
 }
-.menu__seznam > a {
-    
-}
-.menu__burger > div:hover .menu__seznam > a {
+.navbar__menu--hidden {
     transform: scaleY(0);
-
 }
-
-
-
-
-ul {
-    list-style: none;
+.nav__item {
+    font-weight: 700;
+    margin-bottom: .5rem;
 }
