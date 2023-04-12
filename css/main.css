@@ -1,6 +1,11 @@
 :root {
-    --white: #FFFFFF;
-    --orange: #F5841F;
+    font-family: 'Hanken Grotesk', sans-serif;
+    --orange-color: rgb(245, 132, 31);
+    --lightgray-color: rgb(245, 245, 245);
+    --lightblue-color: rgb(241, 249, 252);
+    --blue-color: rgb(45, 66, 117);
+    --darkblue-color: rgb(22, 33, 60);
+    --skyblue-color: rgb(142, 202, 230);
 }
 
 body {
@@ -11,7 +16,7 @@ body {
     margin: auto;
     justify-content: center;
     align-items: center;
-    background-color: var(--orange);
+    background-color: var(--orange-color);
     max-width: 200px;
     height: 50px;
     vertical-align: middle;
@@ -21,7 +26,7 @@ body {
 }
 .button a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--lightblue-color);
     font-weight: 600;
 }
 /* úvod */
@@ -34,4 +39,19 @@ body {
 h1 > em {
     color: var(--orange);
     text-decoration: none;
+}
+.uvod {
+    margin: 1em;
+}
+.uvod__fajfky {
+    margin-left: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.uvod__img > img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border: hidden;
+    border-radius: 10px;
 }

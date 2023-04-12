@@ -7,28 +7,35 @@
     --darkblue-color: rgb(22, 33, 60);
     --skyblue-color: rgb(142, 202, 230);
 }
-.contact__1--item > p {
-    font-size: small;
-    font-weight: bold;
-    color: black;
+
+header {
+    margin-bottom: 2em ;
 }
-.contact__1--item {
-    text-decoration: none;
-    display: flex;
-    padding: 0 0.25em 0 .25em; 
-}
+
 .contact {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    height: 2em;
+    background-color: var(--lightgray-color);
+    padding: 0.5em;
+    margin-bottom: 1em;
 }
+
 .contact__1 {
     display: flex;
+    flex-direction: row;
 }
-.contact__1--item > img {    
-    max-width: 43px;
-    max-height: 43px;
+.contact__1--item {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+}
+.contact__1--item > img {
+    height: 2em;
+}
+.contact__1--item2 {
+    padding-left: 0.75em;
 }
 
 
@@ -52,7 +59,7 @@
 }
 
 .hamburger-menu::after {
-    content: url(../icons/Group\ 40.svg);
+    content: url(../icons/hamburger.svg);
     z-index: 1;
 }
 
@@ -63,7 +70,7 @@
     top: -8px;
     left: -16px;
     text-align: center;
-    /* background-color: var(--lightgray-color); */
+    background-color: var(--lightgray-color);
     transform-origin: top;
     transform: scaleY(1);
     transition: .1s;
@@ -93,3 +100,5 @@
     font-weight: 700;
     margin-bottom: .5rem;
 }
+/* úvod -------------------------------------------------------------------------------- */
+
