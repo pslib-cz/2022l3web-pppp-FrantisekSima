@@ -169,10 +169,7 @@ hr {
     }
 
     /* uvod--------------------------------------------------------------- */
-    .uvod__top  {
-        display: flex;
-        flex-direction: row;
-    }
+
     .footer__flex {
         display: flex;
         width: 70%;
