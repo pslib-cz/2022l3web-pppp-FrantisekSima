@@ -28,7 +28,7 @@ header {
 }
 .contact__1--item {
     display: flex;
-    align-items: center;
+    align-items: top;
     font-size: 10px;
     font-weight: 700;
 }
@@ -101,5 +101,54 @@ header {
     font-weight: 700;
     margin-bottom: .5rem;
 }
-/* úvod -------------------------------------------------------------------------------- */
+/* footer -------------------------------------------------------------------------------- */
 
+footer {
+    background-color: var(--darkblue-color);
+    color: var(--skyblue-color);
+    margin-bottom: -5px;
+}
+footer > section > *:visited {
+    color: var(--skyblue-color);
+}
+.logoipsum__barva {
+    color: skyblue;
+}
+
+footer section {
+    width: 90%;
+    margin: auto;
+}
+.logoipsum {
+    padding-top: 3em;
+    color: var(--skyblue-color);
+}
+.logoipsum img {
+    margin-bottom: 1em;
+}
+.logoipsum__school a {
+    font-weight: 800;
+}
+.logoipsum__school a,p {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+.videotutorialy, .Podpora, .menu {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+.videotutorialy > h3, .Podpora > h3, .menu > h3 {
+    font-size: larger;
+    font-weight: 800;
+    margin-bottom: 1.5em;
+    color: var(--skyblue-color);
+}
+.foot__odkazy > a {
+    color: var(--skyblue-color);
+    font-size: smaller;
+}
+.foot__creator {
+    text-align: right;
+    padding-bottom: 5px;
+}

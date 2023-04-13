@@ -184,20 +184,22 @@ header > h2 {
     flex-direction: column;
     justify-content: center;
     margin-left: 1em;
-    max-height: 5em;
+    max-height: 7em;
 }
 .psani__section--article .article1 {
-    height: 3em;
     overflow: hidden;
-
+    height: min-content;
+    margin: 0;
 }
 .psani__section--article .article2 {
     font-weight: 700;
     margin-top: 0.25em;
+    margin-bottom: 0.25em;
 }
 .psani__section--article .article3 {
     font-weight: 200;
     font-size: small;
+    margin: 0;
 }
 
 /* aktuality------------------------------------------------------------------ */
