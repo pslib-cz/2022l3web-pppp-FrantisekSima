@@ -1,0 +1,32 @@
+:root {
+    font-family: 'Hanken Grotesk', sans-serif;
+    --orange-color: rgb(245, 132, 31);
+    --lightgray-color: rgb(245, 245, 245);
+    --lightblue-color: rgb(241, 249, 252);
+    --blue-color: rgb(45, 66, 117);
+    --darkblue-color: rgb(22, 33, 60);
+    --skyblue-color: rgb(142, 202, 230);
+}
+
+.button {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--orange-color);
+    max-width: fit-content;
+    height: 50px;
+    vertical-align: middle;
+    border: hidden;
+    border-radius: 10em;
+    
+}
+.button a {
+    text-decoration: none;
+    color: var(--lightblue-color);
+    font-weight: 600;
+    padding: 0 1em 0 1em;
+}
+.button_white {
+    background-color: var();
+}
