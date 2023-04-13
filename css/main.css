@@ -7,7 +7,7 @@
     --darkblue-color: rgb(22, 33, 60);
     --skyblue-color: rgb(142, 202, 230);
 }
-
+/* mobile first ---------------------------------------------------------------------- */
 body {
     font-family: 'Hanken Grotesk', sans-serif;
 }
@@ -50,7 +50,10 @@ em {
 }
 .uvod__img > img {
     display: block;
+    margin: auto;
     width: 100%;
+    max-height: 700px;
+    max-width: 1050px;
     object-fit: cover;
     border: hidden;
     border-radius: 10px;
@@ -233,3 +236,58 @@ header > h2 {
     font-weight: 800;
 }
 
+/* desktop------------------------------------------------------------------------ */
+@media only screen and (min-width: 1024px) {
+    .padding-right {
+        padding-right: 15%;
+    }
+    .contact__1 {
+        padding-left: 15%;
+    }
+    .navbar {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .uvod {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .contact__1--item > p {
+        font-size: medium;
+    }
+    .contact__1--item > img {
+        justify-content: center;
+    }
+
+    /* uvod--------------------------------------------------------------- */
+    .uvod__top  {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    .uvod__button {
+        align-content: baseline;
+    }
+    .uvod__top > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .uvod__img > img {
+        margin: 0;
+    }
+    .uvod__bot {
+        margin-top: 2em;
+    }
+
+    /* vyhody-------------------------------------------------------------- */
+
+    .vyhody__ikony {
+        display: flex;
+        flex-direction: row;
+        max-width: 70%;
+    }
+}
