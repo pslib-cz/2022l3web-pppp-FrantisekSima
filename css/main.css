@@ -162,15 +162,72 @@ header > h2 {
 
 .psani {
     padding-top: 2em;
+    width: 90%;
+    margin: auto;
 }
 .psani__section {
     display: flex;
     flex-direction: row;
+    margin-bottom: 2em;
+    align-items: center;
 }
 .psani__section img {
     display: block;
     width: 100%;
     object-fit: cover;
     border: hidden;
-    border-radius: 10em;
+    border-radius: 50%;
+    max-width: 150px;
 }
+.psani__section--article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1em;
+    max-height: 5em;
+}
+.psani__section--article .article1 {
+    height: 3em;
+    overflow: hidden;
+
+}
+.psani__section--article .article2 {
+    font-weight: 700;
+    margin-top: 0.25em;
+}
+.psani__section--article .article3 {
+    font-weight: 200;
+    font-size: small;
+}
+
+/* aktuality------------------------------------------------------------------ */
+
+.aktuality {
+    background-color: var(--lightgray-color);
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+.aktuality__article {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 90%;
+    margin-bottom: 1.5em;
+}
+.aktuality__article--2 {
+    margin-left: 1em;
+}
+.aktuality__article--2 h3 {
+    font-weight: 800;
+}
+.aktuality__article--2 p {
+    max-height: 5em;
+    overflow: hidden;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.aktuality__article--2 a {
+    color: var(--orange-color);
+    font-weight: 800;
+}
+
