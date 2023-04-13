@@ -108,7 +108,7 @@ footer {
     color: var(--skyblue-color);
     margin-bottom: -5px;
 }
-footer > section > *:visited {
+footer > div > section > *:visited {
     color: var(--skyblue-color);
 }
 .logoipsum__barva {
@@ -172,6 +172,15 @@ hr {
     .uvod__top  {
         display: flex;
         flex-direction: row;
+    }
+    .footer__flex {
+        display: flex;
+        width: 70%;
+        margin: auto;
+    }
+    footer > section {
+        width: 70%;
+        margin: auto;
     }
 
 }
