@@ -1,0 +1,149 @@
+:root {
+    font-family: 'Hanken Grotesk', sans-serif;
+    --orange-color: rgb(245, 132, 31);
+    --lightgray-color: rgb(245, 245, 245);
+    --lightblue-color: rgb(241, 249, 252);
+    --blue-color: rgb(45, 66, 117);
+    --darkblue-color: rgb(22, 33, 60);
+    --skyblue-color: rgb(142, 202, 230);
+    --light-orange: rgb(255, 219, 188);
+}
+/* top----------------------------------------------------------------------------- */
+
+.top > header {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2em;
+}
+h1 {
+    margin-bottom: 0.5em;
+    font-size: xx-large;
+}
+.top__nav {
+    display: flex;
+    align-content: last baseline;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.top__nav img {
+    padding-bottom: 3px;
+}
+.top__article {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
+}
+.top__article--text {
+    margin-bottom: 2em;
+}
+
+
+/* mid------------------------------------------------------------------- */
+
+.mid {
+    max-width: 90%;
+    margin: auto;
+    margin-top: 3em;
+}
+.mid__pozadí {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--lightgray-color);
+    border: hidden;
+    border-radius: 1.5em;
+    padding: .5em;
+}
+.mid__grid {
+    background-color: white;
+    border: hidden;
+    max-width: 350px;
+    margin: 1em;
+    border-radius: 1em;
+    box-shadow: 0 2px 2px 0 var(--light-orange), 0 4px 4px 0 var(--light-orange);
+    
+}
+.mid__grid h3 {
+    color: var(--orange-color);
+}
+.mid__grid--article {
+
+}
+.grid__article--šipka {
+    position: relative;   
+    left: 30px;
+    bottom: -25px;
+}
+.grid__article--text {
+    padding: 1.5em;
+    padding-bottom: 0;
+}
+
+
+/* bot------------------------------------------------------------------- */
+
+.bot {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.bot > a {
+    margin-bottom: 1em;
+}
+.bot p {
+    margin: 1.5em;
+}
+.bot span {
+    color: var(--orange-color);
+}
+
+
+/* mobile---------------------------------------------------------------------- */
+
+@media only screen and (min-width: 1024px) {
+    .top header {
+        width: 70%;
+    }
+    .top__article {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70%;
+
+    }
+    .top__article--text {
+        text-align: left;
+        vertical-align: middle;
+        margin: auto 0 auto 0;
+        
+    }
+
+
+    .grid__article--šipka {
+        position: relative;   
+        left: 30px;
+        bottom: -25px;
+        z-index: -1;
+    }
+    .mid__grid:hover h3 {
+        color: black;
+    }
+    .mid__grid:hover .grid__article--šipka {
+        z-index: 1;
+    }
+    .mid__pozadí {
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+
+}
