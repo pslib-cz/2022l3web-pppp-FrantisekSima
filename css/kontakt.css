@@ -62,7 +62,7 @@ h1 {
 .mid__grid {
     background-color: white;
     border: hidden;
-    max-width: 350px;
+    max-width: 300px;
     margin: 1em;
     border-radius: 1em;
     box-shadow: 0 2px 2px 0 var(--light-orange), 0 4px 4px 0 var(--light-orange);
@@ -71,15 +71,34 @@ h1 {
 .mid__grid h3 {
     color: var(--orange-color);
 }
-
-.grid__article--šipka {
-    position: relative;   
-    left: 30px;
-    bottom: -25px;
+.mid__grid--article {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.mid__grid--article img {
+    max-width: 100%;
+    border: hidden;
+    border-radius: 100em;
+    margin: auto;
+}
+.grid__article--img {
+    margin: auto;
+    width: 80%;
+    padding: 1.5em;
+}
+.grid__article--šipka {  
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin: 1em 0 1em 0;
 }
 .grid__article--text {
     padding: 1.5em;
     padding-bottom: 0;
+}
+.grid__article--text h3 {
+    text-align: center;
+    margin-bottom: 1em;
 }
 
 
@@ -107,7 +126,7 @@ h1 {
 }
 
 
-/* mobile---------------------------------------------------------------------- */
+/* desktop---------------------------------------------------------------------- */
 
 @media only screen and (min-width: 1024px) {
     .top header {
@@ -125,23 +144,29 @@ h1 {
         margin: auto 0 auto 0;
         
     }
-
-
-    .grid__article--šipka {
-        position: relative;   
-        left: 30px;
-        bottom: -25px;
-        z-index: -1;
+    .grid__article--text p {
+        margin-left: 1em;
+        min-width: 180px;
     }
-    .mid__grid:hover h3 {
-        color: black;
+    .mid__grid--article {
+        height: 250px;
+        flex-direction: row;
     }
-    .mid__grid:hover .grid__article--šipka {
-        z-index: 1;
+    .mid__grid {
+        background-color: white;
+        border: hidden;
+        max-width: 450px;
+        margin: 1em;
+        border-radius: 1em;
+        box-shadow: 0 2px 2px 0 var(--light-orange), 0 4px 4px 0 var(--light-orange);
+    }
+    .grid__article--text h3 {
+        text-align: left;
+        margin-bottom: 1em;
+        margin-top: 1em;
     }
     .mid__pozadí {
-        padding-top: 4em;
-        padding-bottom: 4em;
+        padding: 3em;
     }
-
+    
 }
